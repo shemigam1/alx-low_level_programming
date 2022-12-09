@@ -10,16 +10,16 @@ int main(void)
 
 	int tens;
 
-	for (tens = 0; tens < 10; tens++)
+	for (tens = '0'; tens < '10'; tens++)
 	{
-		for (ones = 0; ones < 10; ones++)
+		for (ones = '0'; ones < '10'; ones++)
 		{
 			if (ones != tens || tens < ones)
 			{
 				putchar(tens);
 				putchar(ones);
 
-				if (ones != 9 && tens != 8)
+				if (ones != '9' && tens != '8')
 				{
 					putchar(',');
 					putchar(' ');
