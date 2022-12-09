@@ -21,7 +21,7 @@ for (huns = 0; huns <= 9; huns++)
 				putchar((huns % 10) + '0');
 				putchar((tens % 10) + '0');
 				putchar((ones % 10) + '0');
-				if (!(ones == 9 && huns == 7 && tens = 8))
+				if (!(ones == 9 && huns == 7 && tens == 8))
 				{
 					putchar(',');
 					putchar(' ');
