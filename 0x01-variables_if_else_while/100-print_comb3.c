@@ -14,12 +14,12 @@ int main(void)
 	{
 		for (ones = 0; ones < 10; ones++)
 		{
-			if (ones != tens || tens < ones)
+			if (!((ones == tens) || (tens > ones)))
 			{
 				putchar((tens % 10) + '0');
 				putchar((ones % 10) + '0');
 
-				if (ones != 9 && tens != 8)
+				if (!(ones == 9 && tens == 8))
 				{
 					putchar(',');
 					putchar(' ');
