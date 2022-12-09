@@ -31,5 +31,5 @@ for (huns = 0; huns <= 9; huns++)
 	}
 }
 putchar('\n');
-return 0;
+return (0);
 }
