@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char arr[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char arr[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 	for (int i = 0; i < sizeof(arr)/sizeof(char); i++) 
 	{
 		_putchar(arr[i]);
