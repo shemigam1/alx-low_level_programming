@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main print buzz for multiples of 3 & 5
+ * main - print buzz for multiples of 3 & 5
  * Return: 0
  */
 
