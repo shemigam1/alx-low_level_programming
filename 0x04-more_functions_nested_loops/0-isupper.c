@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _isupper - checks if param is uppercase char
+ * @c: input char
+ * Return: 1 if success, 0 if fail
+ */
+
+int _isupper(int c)
+{
+	if ( c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		retur (0);
+	}
+}
