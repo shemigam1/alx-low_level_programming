@@ -2,6 +2,7 @@
 
 /*
  * print_most_numbers - prints most numbers
+ * (neither 2 nor 4).
  * Return: void
  */
 
