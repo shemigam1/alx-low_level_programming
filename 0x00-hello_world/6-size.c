@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * stuff that my file does
- * main: entry point my file does stuff
+ * main - entry point
  * Return: 0
  */
 
