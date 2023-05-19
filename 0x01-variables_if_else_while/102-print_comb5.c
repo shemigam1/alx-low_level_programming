@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (twoone = 0; twoone <= 9; twoone++)
 			{
-				for (twotwo = 1; twotwo <= 9; twotwo++)
+				for (twotwo = 0; twotwo <= 9; twotwo++)
 				{
 					putchar(oneone + '0');
 					putchar(onetwo + '0');
