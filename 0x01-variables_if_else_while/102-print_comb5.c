@@ -25,8 +25,11 @@ int main(void)
 					putchar(' ');
 					putchar(twoone + '0');
 					putchar(twotwo + '0');
-					putchar(',');
-					putchar(' ');
+					if (oneone != 9 && onetwo != 8)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
