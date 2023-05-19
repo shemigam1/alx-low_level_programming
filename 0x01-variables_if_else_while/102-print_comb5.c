@@ -25,7 +25,7 @@ int main(void)
 					putchar(' ');
 					putchar(twoone + '0');
 					putchar(twotwo + '0');
-					if (oneone != 9 && onetwo != 8)
+					if (oneone != 9 && onetwo != 8 && twoone != 9 && twotwo != 9)
 					{
 						putchar(',');
 						putchar(' ');
