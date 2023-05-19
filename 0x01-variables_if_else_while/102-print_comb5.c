@@ -7,30 +7,22 @@
 
 int main(void)
 {
-	int oneone;
-	int onetwo;
-	int twoone;
-	int twotwo;
+	int one;
+	int two;
 
-	for (oneone = 0; oneone <= 9; oneone++)
+	for (one = 0; one <= 99; one++)
 	{
-		for (onetwo = 0; onetwo <= 9; onetwo++)
+		for (two = one + 1; two <= 99; two++)
 		{
-			for (twoone = 0; twoone <= 9; twoone++)
+			putchar(one / 10 + '0');
+			putchar(one % 10 + '0');
+			putchar(' ');
+			putchar(two / 10 + '0');
+			putchar(two % 10 + '0');
+			if (one != 98 || two != 99)
 			{
-				for (twotwo = onetwo + 1; twotwo <= 9; twotwo++)
-				{
-					putchar(oneone + '0');
-					putchar(onetwo + '0');
-					putchar(' ');
-					putchar(twoone + '0');
-					putchar(twotwo + '0');
-					if (oneone + onetwo != 9 + 8)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
