@@ -1,10 +1,10 @@
-#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - entry point
  * n: variable
+ * Return: 0
  */
 
 int main(void)
