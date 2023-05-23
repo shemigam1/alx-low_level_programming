@@ -9,16 +9,17 @@ int main(void)
 {
 	unsigned int a, b, c, i;
 
-	a = 0;
-	b = 1;
-	for (i = 0; i < 49; i++)
+	a = 1;
+	b = 2;
+	printf("%u, %u, ", a, b);
+	for (i = 0; i < 48; i++)
 	{
 		c = a + b;
- 		printf("%d, ", c);
+		printf("%u, ", c);
 		a = b;
 		b = c;
 	}
 	c = a + b;
-	printf("%d\n", c);
+	printf("%u\n", c);
 	return (0);
 }
