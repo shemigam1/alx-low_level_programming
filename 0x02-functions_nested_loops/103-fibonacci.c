@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long long int a, b, c, i;
+	unsigned long int a, b, c, i;
 
 	a = 0;
 	b = 1;
@@ -19,7 +19,7 @@ int main(void)
 		a = b;
 		b = c;
 	} while (c <= 4000000);
-	printf("%llu\n", i);
+	printf("%lu\n", i);
 	return (0);
 }
 
