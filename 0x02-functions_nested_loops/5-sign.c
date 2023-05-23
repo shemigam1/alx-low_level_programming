@@ -3,7 +3,7 @@
 /**
  * print_sign - a function that prints the sign of a number
  * @n: variable
- * Return: 1 on success 0 on failure
+ * Return: 1, -1 on success 0 on failure
  */
 
 int print_sign(int n)
@@ -23,4 +23,5 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
+	return (0);
 }
