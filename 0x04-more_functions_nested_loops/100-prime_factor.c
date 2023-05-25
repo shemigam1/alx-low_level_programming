@@ -6,13 +6,13 @@
  * Return: number
  */
 
-long long prime_factor(long long num)
+long prime_factor(long num)
 {
-	long long lf, i;
+	long lf, i;
 
 	lf = -1;
 
-	while (num & 2 == 0)
+	while (num % 2 == 0)
 	{
 		lf = 2;
 		num /= 2;
@@ -39,10 +39,10 @@ long long prime_factor(long long num)
 
 int main(void)
 {
-	long long int a, b;
+	long int a, b;
 
 	a = 612852475143;
 	b = prime_factor(a);
-	printf("%lld\n", b);
+	printf("%ld\n", b);
 	return (0);
 }
