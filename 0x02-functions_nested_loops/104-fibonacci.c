@@ -11,15 +11,21 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	printf("%lu, %lu, ", a, b);
-	for (i = 0; i < 95; i++)
+	printf("%lu", a);
+	if (98 > 1)
 	{
-		c = a + b;
-		printf("%lu, ", c);
+		printf(", %lu", b);
+	}
+
+	for (int i = 2; i < 98; i++)
+	{
+		unsigned long c = a + b;
+		printf(", %lu", c);
+
 		a = b;
 		b = c;
 	}
-	c = a + b;
-	printf("%lu\n", c);
+
+	printf("\n");
 	return (0);
 }
