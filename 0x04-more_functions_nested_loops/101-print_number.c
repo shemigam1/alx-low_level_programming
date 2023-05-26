@@ -8,43 +8,18 @@
 
 void print_number(int n)
 {
-	int sub, s;
+	unsigned int num;
 
+	num = n;
 	if (n < 0)
 	{
-		n = -n;
+		num = -num;
 		_putchar('-');
 	}
-	if (n >= 10000 && n <= 99999)
+	if (num / 10 != 0)
 	{
-		sub = n / 10000;
-		s = (n / 1000) % 10;
-		_putchar(sub + '0');
-		if (s == 0)
-			_putchar(s + '0');
-		n = n - (sub * 10000);
+		n = num / 10;
+		print_number(n);
 	}
-
-	if (n >= 1000 && n <= 9999)
-	{
-		sub = n / 1000;
-		s = (n / 100) % 10;
-		_putchar(sub + '0');
-		if (s == 0)
-			_putchar(s + '0');
-		n = n - (sub * 1000);
-	}
-	if (n >= 100 && n <= 999)
-	{
-		sub = n / 100;
-		s = (n / 10) % 10;
-		_putchar(sub + '0');
-		if (s == 0)
-			_putchar(s + '0');
-		n = n - (sub * 100);
-	}
-	if (n >= 10 && n <= 99)
-		_putchar(n / 10 + '0');
-	_putchar(n % 10 + '0');
+	_putchar(num % 10 + '0');
 }
-
