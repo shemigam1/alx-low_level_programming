@@ -17,10 +17,10 @@ void puts2(char *str)
 	{
 		if (i == 0)
 			_putchar(*str);
-		str++;
-		i++;
-			if (i % 2 == 0)
+		if (i % 2 == 0)
 			_putchar(*str);
+		i++;
+		str++;
 	}
 	_putchar('\n');
 }
