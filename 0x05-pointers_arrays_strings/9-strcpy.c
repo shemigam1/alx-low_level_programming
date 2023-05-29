@@ -10,9 +10,6 @@
 char *_strcpy(char *dest, char *src)
 {
 	char *ptr = dest;
-	/*if (!dest || !src)
-		return NULL;*/
-
 
 	while (*src != '\0')
 	{
@@ -21,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		src++;
 	}
 	*dest = '\0';
-	return ptr;
+	return (ptr);
 }
