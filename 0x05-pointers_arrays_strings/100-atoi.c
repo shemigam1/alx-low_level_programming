@@ -9,11 +9,11 @@
 int _atoi(char *s)
 {
 	int res;
-	int sign;
+	int sign, count;
 
 	sign = 1;
 	res = 0;
-	
+	count = 0;
 
 	while (*s != '\0')
 	{
@@ -21,14 +21,18 @@ int _atoi(char *s)
 		{
 			s++;
 		}
-		if (*s == '-' || *s == '+')
+		if (*s == '-')
 		{
-			sign = (*s == '-' ? -1 : 1);
+			count++;
 			s++;
 		}
 		if (*s >= '0' && *s <= '9')
 		{
 			res = res * 10 + (*s - '0');
+			if (*(s + 1) == ' ')
+			{
+				s++;
+			}
 		}
 		else
 		{
@@ -36,5 +40,6 @@ int _atoi(char *s)
 		}
 		s++;
 	}
+	sign = (count % 2 == 0) ? 1 : -1;
 	return (sign * res);
 }
