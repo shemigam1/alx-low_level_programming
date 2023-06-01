@@ -10,19 +10,19 @@ char *rot13(char *str)
 {
 	char rot13[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char alpha[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	int i;
+	int i, j;
 	char *s = str;
 
-	while (*s != '\0')
+	for (j = 0; *(s + j) != '\0'; j++)
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (*s == alpha[i])
+			if (*(s + j) == alpha[i])
 			{
-				*s = rot13[i];
+				*(s + j) = rot13[i];
+				break;
 			}
 		}
-		s++;
 	}
 	return (str);
 }
