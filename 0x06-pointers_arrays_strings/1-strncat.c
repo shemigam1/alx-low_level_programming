@@ -35,6 +35,7 @@ char *_strncat(char *dest, char *src, int n)
 	else
 	{
 		int j;
+
 		for (j = 0; j < n; j++)
 		{
 			*ptr = src[j];
