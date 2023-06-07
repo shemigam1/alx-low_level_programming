@@ -10,7 +10,7 @@
 
 int check_mid(int n, int st, int end)
 {
-	int mid; 
+	int mid;
 	int sq;
 
 	if (st > end)
@@ -35,5 +35,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (check_mid(n, 0, n));
+	return (check_mid(n, 1, n));
 }
