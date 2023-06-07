@@ -10,8 +10,8 @@
 
 int check_mid(int n, int st, int end)
 {
-	unsigned int mid; 
-	unsigned int sq;
+	int mid; 
+	int sq;
 
 	if (st > end)
 		return (-1);
