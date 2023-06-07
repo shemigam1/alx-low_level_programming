@@ -19,7 +19,7 @@ int check_div(int num, int div)
 /**
  * is_prime_number - checks if number is prime
  * @n: int
- * @Return: 0(success) 1(failure)
+ * Return: 0(success) 1(failure)
  */
 
 int is_prime_number(int n)
