@@ -28,5 +28,5 @@ int is_palindrome(char *s)
 	int i;
 
 	i = strlen(s);
-	return (check_pal(s, i - 1));
+	return (check_pal(s, 0, i - 1));
 }
