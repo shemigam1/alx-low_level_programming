@@ -4,13 +4,14 @@
 
 /**
  * calcCoins - entry point
- * @a: arg
+ * @i: arg
  * Return: cent
  */
 
-int calcCoins(int a)
+int calcCoins(int i)
 {
-	a = 0;
+	int a = 0;
+
 	while (i > 0)
 	{
 		if (i >= 25)
