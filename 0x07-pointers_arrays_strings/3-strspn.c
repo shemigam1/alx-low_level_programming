@@ -10,6 +10,8 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
+	//j is the index
+	//i is the flag
 
 	i = 0;
 	j = 0;
