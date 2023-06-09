@@ -3,29 +3,14 @@
 #include <stdlib.h>
 
 /**
- * main - prints num of coins
- * @argc: num of args
- * @argv: array of args
- * Return: 0 on success 1 on failure
+ * calcCoins - entry point
+ * @a: arg
+ * Return: cent
  */
 
-int main(int argc, char **argv)
+int calcCoins(int a)
 {
-	int i, a;
-
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	i = atoi(argv[1]);
-	if (i < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
 	a = 0;
-
 	while (i > 0)
 	{
 		if (i >= 25)
@@ -54,6 +39,32 @@ int main(int argc, char **argv)
 			break;
 		}
 	}
+	return (a);
+}
+
+/**
+ * main - prints num of coins
+ * @argc: num of args
+ * @argv: array of args
+ * Return: 0 on success 1 on failure
+ */
+
+int main(int argc, char **argv)
+{
+	int i, a;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	i = atoi(argv[1]);
+	if (i < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
+	a = calcCoins(i);
 	printf("%d\n", a);
 	return (0);
 }
