@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - returns pointer to arg on heap
@@ -9,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	int i, j;
+	int i;
 	char *newstr;
 
 	if (str == NULL)
@@ -18,12 +19,9 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	newstr = malloc(i + 1);
+	newstr = malloc((i + 1) * sizeof(char));
 	if (newstr == NULL)
 		return (NULL);
-	for (j = 0; j <= i; j++)
-	{
-		newstr[j] = str[j];
-	}
+	strcpy(newstr, str);
 	return (newstr);
 }
