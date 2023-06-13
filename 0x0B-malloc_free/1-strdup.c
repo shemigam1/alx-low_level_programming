@@ -24,5 +24,10 @@ char *_strdup(char *str)
 	{
 		strcpy(newstr, str);
 	}
+	else
+	{
+		free(newstr);
+		return (NULL);
+	}
 	return (newstr);
 }
