@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * argtostr - concatenates the args
+ * argstostr - concatenates the args
  * @ac: num of ars
  * @av: array of args
  * Return: str
@@ -29,6 +29,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		int arg_len = strlen(av[i]);
+
 		strcpy(str + index, av[i]);
 		index += arg_len;
 		str[index] = '\n';
