@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	int i;
+	int i = 0;
 	char *newstr;
 
 	if (str == NULL)
@@ -26,7 +26,6 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		free(newstr);
 		return (NULL);
 	}
 	return (newstr);
