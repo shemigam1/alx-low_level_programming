@@ -20,8 +20,9 @@ char *_strdup(char *str)
 		i++;
 	}
 	newstr = malloc((i + 1) * sizeof(char));
-	if (newstr == NULL)
-		return (NULL);
-	strcpy(newstr, str);
+	if (newstr != NULL)
+	{
+		strcpy(newstr, str);
+	}
 	return (newstr);
 }
