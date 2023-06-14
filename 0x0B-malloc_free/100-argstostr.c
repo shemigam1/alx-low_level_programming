@@ -19,21 +19,22 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		len += strlen(av[i]) + i;
+		len += strlen(av[i]);
 	}
 
-	str = malloc((len + 1) * sizeof(char));
+	str = malloc((len + i + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
-		int arg_len = strlen(av[i]);
+		char *s;
 
-		strcpy(str + index, av[i]);
-		index += arg_len;
+		for (s = av[index]; *s != '\0'; s++)
+		{
+			str[index++] = *s;
+		}
 		str[index] = '\n';
-		index++;
 	}
 	str[index] = '\0';
 	return (str);
