@@ -30,11 +30,11 @@ char *argstostr(int ac, char **av)
 	{
 		char *s;
 
-		for (s = av[index]; *s != '\0'; s++)
+		for (s = av[i]; *s != '\0'; s++)
 		{
 			str[index++] = *s;
 		}
-		str[index] = '\n';
+		str[index++] = '\n';
 	}
 	str[index] = '\0';
 	return (str);
