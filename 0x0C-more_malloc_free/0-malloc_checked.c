@@ -4,7 +4,7 @@
 /**
  * malloc_checked - allocated memory with malloc
  * @b: size
- * @Return: ptr to memory
+ * Return: ptr to memory
  */
 
 void *malloc_checked(unsigned int b)
