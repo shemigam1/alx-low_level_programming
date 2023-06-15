@@ -41,6 +41,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 	strcpy(str, s1);
-	strncat(str, s2, n);
+	if (n < j)
+		strncat(str, s2, n);
+	else
+		strncat(str, s2, j);
 	return (str);
 }
