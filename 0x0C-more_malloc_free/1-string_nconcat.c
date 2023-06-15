@@ -30,9 +30,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		j++;
 	}
-	if (n >= j)
-		n = j;
-	str = malloc((i + n + 1) * sizeof(char));
+	if (n < j)
+	{
+		str = malloc((i + n) * sizeof(char));
+	}
+	else
+	{
+		str = malloc((i + j + 1) * sizeof(char));
+	}
 	if (str == NULL)
 		return (NULL);
 	strcpy(str, s1);
