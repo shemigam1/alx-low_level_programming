@@ -73,15 +73,6 @@ void print_num(long n)
 }
 
 /**
- * _atoi - turns string to int
- * @s: ptr
- * Return: 0
- */
-
-int _atoi(char *s)
-{
-}
-/**
  * main - entry point
  * @ac: int
  * @av: arr
