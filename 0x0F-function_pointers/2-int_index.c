@@ -2,7 +2,7 @@
 
 /**
  * int_index - searches for an int
- * @arrray: int
+ * @array: int
  * @size: int
  * @cmp: pointer to function
  * Return: int
