@@ -3,6 +3,8 @@
 #include <stdlib.h>
 /**
  * main - entry point
+ * @ac: int
+ * @av: arr
  * Return: int
  */
 
@@ -26,7 +28,7 @@ int main(int ac, char **av)
 		printf("Error\n");
 		exit(99);
 	}
-	if ((atoi(av[2]) == '/' || atoi(av[2]) == '%') && num2 == 0)
+	if ((atoi(av[2]) == '/' && atoi(av[2]) == '%') || num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
