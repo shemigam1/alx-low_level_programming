@@ -17,11 +17,12 @@ int main(void)
 		printf(", %lu", b);
 	}
 
-	for (int i = 2; i < 98; i++)
+	for (i = 2; i < 98; i++)
 	{
-		unsigned long c = a + b;
+		unsigned long int c;
+		
+		c = a + b;
 		printf(", %lu", c);
-
 		a = b;
 		b = c;
 	}
