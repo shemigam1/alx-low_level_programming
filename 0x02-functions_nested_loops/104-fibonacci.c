@@ -19,8 +19,6 @@ int main(void)
 
 	for (i = 2; i < 98; i++)
 	{
-		unsigned long int c;
-		
 		c = a + b;
 		printf(", %lu", c);
 		a = b;
