@@ -44,9 +44,7 @@ void print_all(const char * const format, ...)
 				continue;
 		}
 		if (a != (i - 1))
-		{
 			printf(", ");
-		}
 		a++;
 	}
 	printf("\n");
