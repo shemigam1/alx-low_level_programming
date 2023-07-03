@@ -5,7 +5,7 @@
  * @h: LL
  * Return: size_t
  *
- * Description: (LL) linked list
+ * Description: (LL) Linked List
  */
 
 size_t list_len(const list_t *h)
