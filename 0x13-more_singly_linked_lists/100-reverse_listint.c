@@ -3,7 +3,7 @@
 /**
  * reverse_listint - reverse a LL
  * @head: head node
- * Reverse: ptr to node
+ * Return: ptr to node
  */
 
 listint_t *reverse_listint(listint_t **head)
@@ -12,7 +12,7 @@ listint_t *reverse_listint(listint_t **head)
 	listint_t *rest;
 
 	if (head == NULL || *head == NULL || (*head)->next == NULL)
-		return *head;
+		return (*head);
 
 	first = *head;
 	rest = (*head)->next;
@@ -21,5 +21,5 @@ listint_t *reverse_listint(listint_t **head)
 	first->next->next = first;
 	first->next = NULL;
 	*head = rest;
-	return *head;
+	return (*head);
 }
