@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_dbj2 - hash function implementing the djb2 alg
+ * hash_djb2 - hash function implementing the djb2 alg
  * @str: string to be hashed
  * Return: hash
  */
