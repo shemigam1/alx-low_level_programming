@@ -22,5 +22,4 @@ oclean:
 fclean:
 	$(RM) $(OBJ) $(NAME) *~
 
-re:
-	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+re: oclean all
