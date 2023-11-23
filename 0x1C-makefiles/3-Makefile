@@ -8,7 +8,6 @@ NAME=school
 
 RM=rm -rf
 
-.PHONY: clean oclean fclean re
 
 all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
@@ -22,5 +21,4 @@ oclean:
 fclean:
 	$(RM) $(OBJ) $(NAME) *~
 
-re:
-	fclean all
+re: oclean all
